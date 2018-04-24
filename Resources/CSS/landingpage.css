@@ -1,0 +1,83 @@
+/*
+white: #ffffff
+black: #000000
+RED HEX COLOR: #EC0C1C;
+DARK RED HEX COLOR: #D80919;
+BLUE HEX COLOR: #063672;
+GOLD HEX COLOR: #9B814E;
+
+font-family: 'Raleway', Helvetica, sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'PT Serif', Georgia, serif;
+font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+*/
+
+body {
+  display: inline-flex;
+  width: 100%;
+}
+.left {
+  height: 100vh;
+  width: 50%;
+  background-color: #EC0C1C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.right {
+  height: 100vh;
+  width: 50%;
+  background-color: #D80919;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* left */
+.badge {
+  height: 80%;
+  width: 60%;
+
+}
+.podium {
+  height: 25%;
+  width: 95%;
+  background-color: #ffffff;
+  position: relative;
+  bottom: 0;
+  margin-bottom: 0;
+  border-width: thick;
+  border-radius: 30%;
+}
+/* right */
+.logo {
+  height:
+}
+
+.welcome {
+  color: #063672;
+  margin: 5em 2em
+}
+#welcometo {
+  color: #063672;
+}
+#initial {
+  color: #ffffff;
+}
+.enter {
+  color: #9B814E;
+  width: 10em;
+  height: 10em;
+  margin: auto;
+  padding: 2em;
+  background-color: #ffffff;
+  border-radius: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.enter h2 {
+  margin: auto;
+}
