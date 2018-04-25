@@ -42,6 +42,8 @@ body {
   width: 80%;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .badge img{
   width: 100%;
@@ -49,48 +51,53 @@ body {
   z-index: 5;
 }
 .podium {
-  height: 50%;
+  height: 65%;
   width: 40%;
-  background-color: #ffffff;
+  background: #ffffff;
   position: absolute;
-  bottom: 12%;
+  top: 18%;
   margin-bottom: 0;
   z-index: 1;
   border-width: thick;
-  border-radius: 45%;
+  border-radius: 20% 20% 80% 80%;
+  flex-shrink: 1;
 }
 .badge h1 {
   z-index: 4;
   position: relative;
-  bottom: 5%;
-  color: #EC0C1C;
+  color:  #063672;
   padding-bottom: 0;
+  text-decoration: none;
+  font-family: 'Raleway', Helvetica, sans-serif;
 }
 /* right */
 .logo {
-  height: 10em;
-  width: auto;
-  margin-left: -5em;
+  height: 12em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
 }
 .logo img {
   height: 100%;
 }
 .welcome {
-  color: #063672;
+  color:  #063672;
   margin: 3em 2em;
 }
 .welcome h1 {
   font-size: 4em;
   position: relative;
   left: 25%;
+  font-family: 'IBM Plex Sans', Helvetica, sans-serif;
 }
 #welcometo {
-  color: #063672;
+  color:  #063672;
   position: relative;
   left: -40%;
 }
 #initial {
-  color: #ffffff;
+  color:  #ffffff;
 }
 .enter {
   color: #9B814E;
@@ -108,6 +115,7 @@ body {
 }
 .enter h2 {
   margin: auto;
+  font-family: 'Raleway', Helvetica, sans-serif;
 }
 a:hover .enter h2  {
   text-decoration: none;
@@ -118,4 +126,29 @@ a:hover .enter  {
   background-image: none;
   background-color: #9B814E;
   box-shadow: 0 0 15em #fff;
+}
+@media only screen and (max-width: 1300px) {
+  .logo {
+    height: 9em;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .logo {
+        height: 11em;
+    }
+    .left {
+        display: none;
+    }
+    .right {
+      background: linear-gradient(to right, rgb(236,12,28), #063672);
+      width: 100%;
+    }
+    h1, #welcometo {
+      color: #ffffff;
+    }
+    #initial {
+      color: #9B814E;
+    }
 }

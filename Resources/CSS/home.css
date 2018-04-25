@@ -17,9 +17,126 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  z-index: -1;
+  position: fixed;
+  transition: all 5s ease;
 }
 header img{
   height: 95%;
   margin-top: 1em;
+}
+.belowTitle {
+  position: relative;
+  top: 11em;
+  z-index: 0;
+  background: linear-gradient(to bottom, rgba(236,12,28, 0.3), #9b814e 100%);
+}
+#navigation {
+  position: sticky;
+  top: 0;
+  transition: all 5s ease;
+}
+nav {
+  height: 10em;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #EC0C1C;
+  color: #ffffff;
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  margin: auto 10em;
+}
 
+nav ul li {
+  font-size: 2em;
+  height: 3em;
+  color: #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
+}
+nav ul li:first-child {
+  border-left: none;
+}
+nav ul li:last-child {
+  border-right: none;
+}
+nav ul li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  width: 100%;
+  height: 100%;
+  padding-left: 1em;
+  padding-right: 1em;
+  transition: background-color 1s ease;
+}
+nav ul li a i {
+  margin-right: 0.5em;
+}
+nav ul li a:hover {
+  color: #9B814E;
+  background-color: #ffffff;
+}
+@media only screen and (max-width: 750px) {
+  nav ul li a i {
+    display: none;
+  }
+}
+#navigation.shrink ul li{
+  transition: all 5s ease;
+  font-size: 1.5em;
+  height: 2em;
+}
+header.shrink img{
+  height: 5em;
+  margin-top: 0;
+}
+nav.shrink {
+  height: 5em;
+}
+.other {
+  height: 3em;
+  position: sticky;
+  top: 10em;
+  background-color: #ffffff;
+  z-index: 0;
+  transition: top 5s ease;
+  cursor: pointer;
+}
+.other h2{
+  margin: auto 0.75em;
+  display: none;
+  width: 2em;
+  height: 90%;
+}
+.other i, .other h2 {
+  color: #EC0C1C;
+  font-size: 2em;
+  cursor: pointer;
+}
+.other:hover i{
+    transition: transform 30s ease;
+    transform: rotate(3600deg);
+}
+.other:hover h2{
+    display: inline-flex;
+}
+.other.shrink {
+  position: relative;
+  top: 0;
+}
+
+/*Main body */
+.events {
+  height: 1000em;
 }
