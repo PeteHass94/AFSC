@@ -15,3 +15,6 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
 html {
   font-size: 16px;
 }
+a:hover {
+  text-decoration: none;
+}

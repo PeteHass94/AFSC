@@ -33,51 +33,89 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding-left: 3em;
 }
 
 /* left */
 .badge {
   height: 80%;
-  width: 60%;
-
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+.badge img{
+  width: 100%;
+  position: relative;
+  z-index: 5;
 }
 .podium {
-  height: 25%;
-  width: 95%;
+  height: 50%;
+  width: 40%;
   background-color: #ffffff;
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 12%;
   margin-bottom: 0;
+  z-index: 1;
   border-width: thick;
-  border-radius: 30%;
+  border-radius: 45%;
+}
+.badge h1 {
+  z-index: 4;
+  position: relative;
+  bottom: 5%;
+  color: #EC0C1C;
+  padding-bottom: 0;
 }
 /* right */
 .logo {
-  height:
+  height: 10em;
+  width: auto;
+  margin-left: -5em;
 }
-
+.logo img {
+  height: 100%;
+}
 .welcome {
   color: #063672;
-  margin: 5em 2em
+  margin: 3em 2em;
+}
+.welcome h1 {
+  font-size: 4em;
+  position: relative;
+  left: 25%;
 }
 #welcometo {
   color: #063672;
+  position: relative;
+  left: -40%;
 }
 #initial {
   color: #ffffff;
 }
 .enter {
   color: #9B814E;
-  width: 10em;
-  height: 10em;
+  width: 12em;
+  height: 12em;
   margin: auto;
   padding: 2em;
   background-color: #ffffff;
-  border-radius: 5em;
+  border-radius: 6em;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("../Images/ballOutline.png");
+  background-size: 101%;
 }
 .enter h2 {
   margin: auto;
+}
+a:hover .enter h2  {
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #9B814E;
+}
+a:hover .enter  {
+  background-image: none;
+  background-color: #9B814E;
+  box-shadow: 0 0 15em #fff;
 }
