@@ -51,11 +51,11 @@ body {
   z-index: 5;
 }
 .podium {
-  height: 65%;
+  height: 90%;
   width: 40%;
   background: #ffffff;
   position: absolute;
-  top: 18%;
+  top: 5%;
   margin-bottom: 0;
   z-index: 1;
   border-width: thick;
@@ -76,7 +76,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-
 }
 .logo img {
   height: 100%;
