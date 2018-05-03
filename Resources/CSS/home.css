@@ -30,9 +30,10 @@ header img{
   top: 11em;
   z-index: 0;
   background-color: rgba(155, 129, 78, 0.3);
+  padding-bottom: 2em;
 }
 #navigation {
-  position: sticky;
+  position: block;
   top: 0;
   transition: all 5s ease;
 }
@@ -99,19 +100,19 @@ nav ul li a:hover {
   height: 2em;
 }
 header.shrink img{
-  height: 5em;
-  margin-top: 0;
+  height: 0;
 }
 nav.shrink {
   height: 5em;
+  position: fixed;
 }
 .other {
   height: 3em;
-  position: sticky;
-  top: 10em;
+  position: block;
   background-color: #ffffff;
   z-index: 0;
-  transition: top 5s ease;
+  transition: margin-top 5s ease;
+  margin-top: 0;
   cursor: pointer;
 }
 .other h2{
@@ -133,19 +134,22 @@ nav.shrink {
     display: inline-flex;
 }
 .other.shrink {
-  position: relative;
+  position: fixed;
+  top: 5em;
+  transition: top 5s ease;
   top: 0;
+  z-index: -5;
 }
 /*Events */
 .events {
-  height: 1000em;
+  margin-bottom: 2em;
 }
 .events {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 8em;
+  padding-top: 2em;
 }
 .events .news {
   width: 25%;
@@ -164,15 +168,47 @@ nav.shrink {
   margin-left: auto;
   margin-right: auto;
 }
-
+.events .main .description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.events .main .description .headline {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.events .main .description .headline h1{
+  margin: auto;
+  margin-left: 1em;
+}
+.events .main .description .headline a{
+  width: 5em;
+  margin-left: 4em;
+  margin-right: 0
+}
 /*Main body */
-
+@media only screen and (max-width: 1400px) {
+  .events .main {
+    width: 70%;
+  }
+  .events .main .description .headline {
+    width: 95%;
+  }
+  .events .main .description .headline a{
+    margin-left: 2em;
+  }
+}
 /*news */
 .events .newsImage {
   width: 100%;
 }
 .events .news img {
   width: 100%;
+}
+.events .newsItem {
+  margin-bottom: 1em;
 }
 
 .description a {
@@ -193,4 +229,97 @@ nav.shrink {
 .description a:hover .mediaIcon {
   transition: background-color 1s ease;
   background-color: #9B814E;
+}
+.newsLinks {
+    height: 12em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.newsLink {
+  height: 3em;
+  width: 100%;
+  border: 0.1em solid #EC0C1C;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsLink h1 {
+  font-size: 1.5em;
+  color: #EC0C1C;
+}
+.newsLink:nth-child(3) {
+  border-color:  #063672;
+  background-color: #ffffff;
+}
+.newsLink:nth-child(3) h1 {
+  color: #063672;
+}
+.newsLink:nth-child(2) {
+  border-color: #9B814E;
+  background-color: #ffffff;
+}
+.newsLink:nth-child(2) h1 {
+  color: #9B814E;
+}
+/* main body details */
+.main .details {
+  width: 90%;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main .details h2 {
+  position: relative;
+  left: -0.6em;
+}
+.itinerary {
+  width: 40%;
+  margin-left: 5%;
+  text-align: justify;
+}
+.itinerary ul{
+  list-style-type: circle;
+}
+.itinerary ul li{
+  color: #063672;
+}
+.brief {
+  width: 45%;
+  padding-top: 1em;
+  margin-right: 5%;
+  text-align: justify;
+}
+.QOTM {
+  color: #EC0C1C;
+  font-style: italic;
+  font-family: 'PT Serif', Georgia, serif;
+  width: 90%;
+}
+.QOTM h1{
+  font-size: 2em;
+}
+.QOTM h2{
+  text-align: right;
+  margin-right: 1em;
+  font-size: 1.5em;
+}
+
+/* Club info */
+.clubInfo {
+  width: 95%;
+  border: 1em solid #EC0C1C;
+  background-color: #ffffff;
+  text-align: center;
+  padding: 2em;
+  margin: 0 auto;
+}
+.clubInfo h1 {
+  color: #EC0C1C;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 700;
 }
