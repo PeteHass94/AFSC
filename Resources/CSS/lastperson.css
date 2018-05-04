@@ -1,0 +1,40 @@
+/*
+white: #ffffff
+black: #000000
+RED HEX COLOR: #EC0C1C;
+                rgb(236,12,28);
+DARK RED HEX COLOR: #D80919;
+                    rgb(216,9,25);
+BLUE HEX COLOR: #063672;
+GOLD HEX COLOR: #9B814E;
+
+font-family: 'Raleway', Helvetica, sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'PT Serif', Georgia, serif;
+font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+*/
+.belowTitle {
+  background: linear-gradient(to right, rgb(236,12,28), #063672);
+  width: 100%;
+}
+#navigation {
+  background-color: #000000;
+}
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.left, .right {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: auto;
+}
+.left img, .right img{
+  margin: auto 1em;
+}
