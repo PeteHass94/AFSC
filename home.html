@@ -1,4 +1,4 @@
-</il><li></il><li><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -97,12 +97,17 @@
         <div class="description">
           <div class="headline">
             <h1>Our May Meeting</h1>
-            <a href="#">
+            <a data-toggle="tooltip" title="The Meetings Minutes">
               <div class="mediaIcon minutes">
                 <i class="fal fa-envelope"></i>
               </div>
             </a>
-            <a href="#">
+            <a href="https://goo.gl/maps/Z7ofLqhYrcu">
+              <div class="mediaIcon map">
+                <i class="fal fa-map-marker-alt"></i>
+              </div>
+            </a>
+            <a href="http://bit.ly/AFSCfb2017">
               <div class="mediaIcon facebooklink">
                 <i class="fab fa-facebook-f"></i>
               </div>
@@ -143,6 +148,7 @@
     <div class="clubInfo">
       <h1>ARSENAL FERMANAGH SUPPORTER CLUB</h1>
       <h1>Established in 2004</h1>
+      <h3>Meetings are usually the 1st Thurday of every month in Blakes of the Hollow!</h3>
       <h1 id="motto">Victoria Concordia Crescit</h1>
     </div>
     <div class="matchdays">
@@ -152,9 +158,40 @@
 
     </div>
   </div>
+  <div class="comments">
+    <h1>Comments</h1>
+    <div class="form">
+      <form action="mailto:arsenalfermanaghsc@gmail.com?subject=Website Comment" method="post" enctype="text/plain">
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Your Name: (Not Essential)</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" name="name" placeholder="name/nickname">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Subject:</label>
+          <select name="subject" class="form-control" id="exampleFormControlSelect1">
+            <option>Select from the list</option>
+            <option>Website</option>
+            <option>Meetings</option>
+            <option>Matchday Tickets</option>
+            <option>Concern</option>
+          </select>
+        </div>
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1">Your Comment:</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="your comment"></textarea>
+        </div>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+        </form>
+    </div>
+  </div>
   <footer>
-    <div class="">
-
+    <div class="Emirates">
+      <a href="https://goo.gl/maps/Z7bc71tvP8n"> <img src="./Resources/Images/North London Map.jpg" alt=""> </a>
+    </div>
+    <div class="extras">
+      <a href="mailto:arsenalfermanaghsc@gmail.com?subject=Website Comment"><h1><i class="fal fa-envelope"></i>arsenalfermanaghsc@gmail.com</h1></a>
+      <a href="#"><h1><i class="fab fa-facebook-f"></i>facebook</h1></a>
     </div>
   </footer>
   </body>

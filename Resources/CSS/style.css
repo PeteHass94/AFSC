@@ -37,6 +37,9 @@ body {
 .mediaIcon i {
   color: #ffffff;
 }
+.mediaIcon.facebooklink {
+  background-color: #3B5998;
+}
 .description {
   background-color: #ffffff;
   width: 100%;
@@ -46,6 +49,24 @@ body {
   justify-content: center;
   padding: 0.5em;
 }
+.description h1, .description h2 {
+  color: #EC0C1C;
+  font-family: 'PT Serif', Georgia, serif;
+}
+.description p,
+.description li {
+  font-size: 1em;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
 #motto {
   font-family: 'Raleway Dots', cursive;
+  font-weight: 400;
+  font-size: 4em;
+}
+input[type="submit"],
+input[type="reset"]
+{
+    background: transparent;
+    border: none;
+    padding: 0.5em;
 }

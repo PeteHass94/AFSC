@@ -13,7 +13,7 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
 */
 
 header {
-  height: 10em;
+  height: 14em;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -22,12 +22,12 @@ header {
   transition: all 5s ease;
 }
 header img{
-  height: 95%;
+  height: 90%;
   margin-top: 1em;
 }
 .belowTitle {
   position: relative;
-  top: 11em;
+  top: 15em;
   z-index: 0;
   background-color: rgba(155, 129, 78, 0.3);
   padding-bottom: 2em;
@@ -89,9 +89,20 @@ nav ul li a:hover {
   color: #9B814E;
   background-color: #ffffff;
 }
-@media only screen and (max-width: 750px) {
-  nav ul li a i {
+@media only screen and (max-width: 1000px) {
+  #navigation ul li a i {
     display: none;
+  }
+  #navigation ul a{
+    padding: 0.5em;
+  }
+}
+@media only screen and (max-width: 700px) {
+  #navigation ul li a i {
+    display: inline-block;
+  }
+  #navigation ul li a{
+    content: "";
   }
 }
 #navigation.shrink ul li{
@@ -208,7 +219,7 @@ nav.shrink {
   width: 100%;
 }
 .events .newsItem {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 
 .description a {
@@ -217,9 +228,7 @@ nav.shrink {
   justify-content: center;
   margin: 0.5em auto;
 }
-.description h1, .description h2 {
-  color: #EC0C1C;
-}
+
 .description span {
   color: #EC0C1C;
 }
@@ -322,4 +331,83 @@ nav.shrink {
   color: #EC0C1C;
   font-family: 'Raleway', Helvetica, sans-serif;
   font-weight: 700;
+}
+.clubInfo h3 {
+  color: #EC0C1C;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+/*comments */
+.comments {
+  position: relative;
+  top: 15em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 2em auto;
+  width: 100%;
+}
+.comments h1 {
+  color: #063672;
+}
+.comments .form {
+  width: 60%;
+  color: #063672;
+}
+.form-control:focus {
+  border-color: #063672;
+  box-shadow: 0 0 0 0.2rem rgba(6,54,114,.65);
+}
+input[type="submit"] {
+  background-color: #60A830;
+  border: 0.05em solid #063672;
+  border-radius: 20%;
+  color: #ffffff;
+}
+input[type="reset"]
+{
+    background: #9B814E;
+    border: 0.05em solid #063672;
+    border-radius: 20%;
+    color: #ffffff;
+    margin-left: 2em;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover
+{
+  box-shadow: 0 0 0 0.2rem rgba(6,54,114,.65);
+}
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  top: 15em;
+  background-color: #063672;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Emirates {
+  width: 50%;
+  text-align: center;
+  margin: 2em auto;
+}
+.Emirates img {
+  width: 60%;
+}
+.extras {
+  text-align: right;
+  width: 45%;
+  padding-right: 2em;
+}
+.extras a {
+  color: #ffffff;
+}
+.extras a:hover {
+  color: #9B814E;
+}
+.extras i {
+  margin-right: 1em;
 }

@@ -10,3 +10,6 @@ $(document).on("scroll", function(){
     $("header").removeClass("shrink");
   }
 });
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+});
