@@ -131,6 +131,11 @@ a:hover .enter  {
     height: 9em;
   }
 }
+@media only screen and (max-height: 800px) {
+  .right {
+    height: 500em;
+  }
+}
 
 
 @media only screen and (max-width: 1200px) {

@@ -32,9 +32,37 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60em;
   padding: auto;
+  color: #9B814E;
 }
-.left img, .right img{
-  margin: auto 1em;
+.left a, .right a {
+  height: 100%;
+}
+.click {
+  height 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left img {
+  margin-right: 1em;
+  margin-left: 1em;
+}
+.left img {
+  height: 10%;
+}
+
+
+
+.right .click {
+  border: 1em solid #ffffff;
+  border-bottom: 1em solid transparent;
+}
+.right i {
+  height: 40%;
+  font-size: 12em;
+  text-align: center;
+  display: flex;
+  align-items: center;
 }
