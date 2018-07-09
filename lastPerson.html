@@ -29,7 +29,7 @@
       <nav id="navigation">
         <ul>
           <li><a href="./home.html"><i class="fal fa-home-heart"></i><span>Home</span></a></li>
-          <li><a href=""><i class="far fa-futbol"></i><span>Matchday</span></li></a>
+          <li><a href="./matchday.html"><i class="far fa-futbol"></i><span>Matchday</span></li></a>
           <li><a href=""><i class="fal fa-calendar-check"></i><span>Events</span></li></a>
           <li><a href=""><i class="fal fa-users"></i><span>Members</span></li></a>
         </ul>
@@ -41,6 +41,7 @@
           <h2>info</h2>
         </a>
       </nav>
+      <div id="bumper"></div>
       <div class="main">
         <div class="left">
           <a href="#">
@@ -50,7 +51,7 @@
             </div>
           </a>
         </div>
-        <div class="right">
+      <div class="right">
           <a href="#">
             <div class="click">
               <i class="fal fa-futbol spin"></i>
@@ -59,11 +60,44 @@
           </a>
         </div>
       </div>
-
       <div class="rules">
+
         <h1>Last Person rules</h1>
+        <div class="rulesContainer">
+        <ul>
+          <li>Pick 1 team per game week you think will win.</li>
+          <li>Cannot pick the same team twice!</li>
+          <li>If your team wins you are through to the next game week.</li>
+          <li>If your team loses or draws then you are out.</li>
+          <li>Progress through the gameweeks, the competition keeps going until we have a <span id="lastPerson">LAST PERSON STANDING!!</span></li>
+        </ul>
+      </div>
+        <h2>Special Circumstance rules</h2>
+        <div class="rulesContainer">
+        <ul>
+          <li>Should all participants of that game week go out</li>
+          <ul id="sub">
+            <li>The gameweek is void and all participants are through to the next round.</li>
+          </ul>
+          <li>Should a fixture get postponed or canceled.</li>
+          <ul  id="sub">
+            <li>Your position is frozen until that fixture is played.</li>
+            <li>Your position is an assumed win and you will have to pick future gameweek teams accordingly.</li>
+            <li>Should your team draw or lose, then your progress is haulted at the gameweek that fixture was suppose to be played.</li>
+          </ul>
+        </ul>
+        </div>
       </div>
     </div>
     <script>$(".spin").rotate(180)</script>
+    <footer>
+      <div class="Emirates">
+        <a href="https://goo.gl/maps/Z7bc71tvP8n"> <img src="./Resources/Images/North London Map.jpg" alt=""> </a>
+      </div>
+      <div class="extras">
+        <a href="mailto:arsenalfermanaghsc@gmail.com?subject=Website Comment"><h1><i class="fal fa-envelope"></i>arsenalfermanaghsc@gmail.com</h1></a>
+        <a href="#"><h1><i class="fab fa-facebook-f"></i>facebook</h1></a>
+      </div>
+    </footer>
   </body>
 </html>

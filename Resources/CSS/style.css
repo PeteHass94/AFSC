@@ -78,7 +78,7 @@ header {
   justify-content: center;
   z-index: -1;
   position: fixed;
-  transition: all 5s ease;
+  transition: all 1s ease;
 }
 header img{
   height: 90%;
@@ -87,7 +87,7 @@ header img{
 #navigation {
   position: block;
   top: 0;
-  transition: all 5s ease;
+  transition: all 1s ease;
 }
 nav {
   height: 10em;
@@ -115,7 +115,7 @@ nav ul li {
   color: #ffffff;
   border-left: 2px solid #ffffff;
   border-right: 2px solid #ffffff;
-  transition: all 5s ease;
+  transition: all 1s ease;
 }
 nav ul li:first-child {
   border-left: none;
@@ -159,7 +159,7 @@ nav ul li a:hover {
   }
 }
 #navigation.shrink ul li{
-  transition: all 5s ease;
+  transition: all 1s ease;
   font-size: 1.5em;
   height: 2em;
 }
@@ -175,7 +175,7 @@ nav.shrink {
   position: block;
   background-color: #ffffff;
   z-index: 0;
-  transition: margin-top 5s ease;
+  transition: margin-top 1s ease;
   margin-top: 0;
   cursor: pointer;
 }
@@ -200,7 +200,7 @@ nav.shrink {
 .other.shrink {
   position: fixed;
   top: 5em;
-  transition: top 5s ease;
+  transition: top 1s ease;
   top: 0;
   z-index: -5;
 }
@@ -208,4 +208,55 @@ nav.shrink {
   position: relative;
   top: 12em;
   z-index: 0;
+}
+#bumper {
+  height: 0em;
+  width: 100%;
+}
+#bumper.shrink{
+  height: 5em;
+}
+/* footer */
+footer {
+  position: relative;
+  width: 100%;
+  top: 12em;
+  background-color: #063672;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.Emirates {
+  width: 50%;
+  text-align: center;
+  margin: 2em auto;
+}
+.Emirates img {
+  width: 60%;
+}
+.extras {
+  text-align: right;
+  width: 45%;
+  padding-right: 2em;
+}
+.extras a {
+  color: #ffffff;
+
+}
+.extras a h1{
+  font-size: 1.5em;
+}
+.extras a:hover {
+  color: #9B814E;
+}
+.extras i {
+  margin-right: 1em;
+}
+@media only screen and (max-width: 1400px) {
+  .extras a h1{
+    font-size: 1em;
+  }
+
 }

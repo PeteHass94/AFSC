@@ -1,0 +1,76 @@
+/*
+white: #ffffff
+black: #000000
+RED HEX COLOR: #EC0C1C;
+                rgb(236,12,28);
+DARK RED HEX COLOR: #D80919;
+                    rgb(216,9,25);
+BLUE HEX COLOR: #063672;
+GOLD HEX COLOR: #9B814E;
+
+font-family: 'Raleway', Helvetica, sans-serif;
+font-family: 'Raleway Dots', cursive;
+font-family: 'PT Serif', Georgia, serif;
+font-family: 'IBM Plex Sans', Helvetica, sans-serif;
+*/
+.belowTitle {
+  background: linear-gradient(to right, rgb(236,12,28), #063672);
+  width: 100%;
+  padding-bottom: 7em;
+}
+#FixtureList {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  margin-top: 5em;
+  width: 95%;
+  border-collapse: separate;
+  border-spacing: 0 1em;
+  background: #ffffff;
+  padding: 1em;
+  padding-top: 0;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+col {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+th {
+  background: #063672;
+  color: #ffffff;
+  position: sticky;
+  padding-top: 1.5em;
+  padding-bottom: 1em;
+  text-align: center;
+  font-size: 1.2em
+}
+
+
+tr {
+  background: rgb(236,12,28);
+  height: 5em;
+  margin-bottom: 1em;
+}
+tr td{
+  padding-top: 1.75em;
+  text-align: center;
+  font-size: 1.1em;
+}
+tr:nth-child(even) {
+  background: rgb(216,9,25);
+}
+
+tr td:nth-child(3) {
+  font-weight: bold;
+}
+tr td:nth-child(6) {
+  font-weight: bold;
+}
+
+tr:hover {
+  background: #9B814E;
+  color: #ffffff;
+}

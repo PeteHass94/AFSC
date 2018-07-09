@@ -25,6 +25,8 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
+
 }
 .left, .right {
   width: 47%;
@@ -37,27 +39,48 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   color: #9B814E;
 }
 .left a, .right a {
-  height: 100%;
+  height: 90%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25%;
+  transition: all 3s ease;
+}
+.left a:hover {
+  background-color: #063672;
+}
+.right a:hover {
+  background-color: rgb(236,12,28);
+}
+.right a:hover i {
+  transition: transform 30s ease;
+  transform: rotate(3600deg);
 }
 .click {
-  height 40%;
+  height: 40em;
+  width: 100%;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.left img {
-  margin-right: 1em;
-  margin-left: 1em;
+.left .click img {
+  padding: 1em;
 }
-.left img {
-  height: 10%;
+.left .click img {
+  height: 25em;
 }
-
-
-
+.click h2 {
+  margin-top: 2em;
+  color: #ffffff;
+}
 .right .click {
   border: 1em solid #ffffff;
   border-bottom: 1em solid transparent;
+  padding: 2em;
+  width: 80%;
 }
 .right i {
   height: 40%;
@@ -65,4 +88,36 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   text-align: center;
   display: flex;
   align-items: center;
+  color: #9B814E;
+}
+.rules {
+  width: 100%;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5em;
+}
+.rules li {
+  list-style-type: disc;
+  font-size: 1.25em;
+}
+.rules #sub li {
+  margin-left: 1em;
+  list-style-type: circle;
+}
+.rulesContainer {
+  display: flex;
+  width: 75%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #9B814E;
+  padding: 3em;
+  border-radius: 5em;
+}
+#lastPerson {
+  color: #063672;
+  font-weight: bold;
 }
