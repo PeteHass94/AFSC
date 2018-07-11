@@ -18,13 +18,19 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   width: 100%;
   padding-bottom: 7em;
 }
+#navigation.shrink {
+  opacity: 0.6;
+}
+.other.shrink {
+  opacity: 0;
+}
 #FixtureList {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 table {
-  margin-top: 5em;
+  margin-top: 2em;
   width: 95%;
   border-collapse: separate;
   border-spacing: 0 1em;
@@ -47,7 +53,54 @@ th {
   text-align: center;
   font-size: 1.2em
 }
+.months {
+  width: 100%;
+  padding: 2em;
+  padding-bottom: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.months h2 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+}
+.months h2 i{
+  margin-right: 0.5em;
+}
+.months ul {
+  display:  flex;
+  flex-wrap: wrap;
+  text-align: center;
+  width: 100%;
+  justify-content: space-around;
+}
+.months li {
+  min-width: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto 1em;
+  margin-top: 1em;
+  background-color: #9B814E;
+  border-radius: 10%;
+  transition: background-color 1s ease;
+}
+.months li a{
+  color: #ffffff;
+  padding: 1em;
+  text-align: center;
+  margin: auto;
+}
+.months li:hover a{
+  color: #9B814E;
+}
+.months li:hover{
+  background-color: #ffffff;
 
+}
 
 tr {
   background: rgb(236,12,28);
@@ -73,4 +126,24 @@ tr td:nth-child(6) {
 tr:hover {
   background: #9B814E;
   color: #ffffff;
+}
+
+button {
+  background:transparent;
+  border:none;
+  outline:none;
+  display:block;
+}
+.displayteams {
+  border: 2px solid #9B814E;
+  font-size: 2em;
+  display: flex;
+  background: #EC0C1C;
+  padding: 0.4em;
+  padding-top: 0.5em;
+  border-radius: 3em / 5em;
+  transition: background-color 1s ease;
+}
+.displayteams:hover {
+  background-color: #063672;
 }

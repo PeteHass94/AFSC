@@ -30,7 +30,7 @@
     <nav id="navigation">
       <ul>
         <li><a href="home.html"><i class="fal fa-home-heart"></i><span>Home</span></a></li>
-        <li><a href=""><i class="far fa-futbol"></i><span>Matchday</span></li></a>
+        <li id="matchdayMenu"><a href=""><i class="far fa-futbol"></i><span>Matchday</span></li></a>
         <li><a href=""><i class="fal fa-calendar-check"></i><span>Events</span></li></a>
         <li><a href=""><i class="fal fa-users"></i><span>Members</span></li></a>
       </ul>
@@ -45,6 +45,31 @@
     <div id="bumper"></div>
     <div id="bumper"></div>
     <div id="bumper"></div>
+
+    <div class="months">
+      <h2>Go to Month:</h2>
+      <ul>
+        <li><a href="#August">August</a></li>
+        <li><a href="#September">September</a></li>
+        <li><a href="#October">October</a></li>
+        <li><a href="#November">November</a></li>
+        <li><a href="#December">December</a></li>
+        <li><a href="#January">January</a></li>
+        <li><a href="#February">February</a></li>
+        <li><a href="#March">March</a></li>
+        <li><a href="#April">April</a></li>
+        <li><a href="#May">May</a></li>
+      </ul>
+      <button type="button" name="displayTeams" class="displayteams"><a href="#">
+        <h2 ><i class="fal fa-hand-pointer"></i>Search by Teams</h2>
+      </a></button>
+
+    </div>
+    <div class="teams">
+
+    </div>
+
+
     <!----------------------------->
 <!--START OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD -->
 <!----------------------------->
@@ -68,7 +93,7 @@
   <th>Ticket Deadline</th>
   <th>Result</th>
  </tr>
- <tr>
+ <tr id="August">
   <td>12/08/2018</td>
   <td>16:00</td>
   <td>Home</td>
@@ -95,7 +120,7 @@
   <td>25/07/2018</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="September">
   <td>02/09/2018</td>
   <td>13:30</td>
   <td>Away</td>
@@ -131,7 +156,7 @@
   <td>29/08/2018</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="October">
   <td>07/10/2018</td>
   <td>TBC</td>
   <td>Away</td>
@@ -158,7 +183,7 @@
   <td>27/09/2018</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="November">
   <td>03/11/2018</td>
   <td>15:00</td>
   <td>Home</td>
@@ -185,7 +210,7 @@
   <td>24/10/2018</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="December">
   <td>02/12/2018</td>
   <td>TBC</td>
   <td>Home</td>
@@ -248,7 +273,7 @@
   <td>29/11/2018</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="January">
   <td>01/01/2019</td>
   <td>15:00</td>
   <td>Home</td>
@@ -284,7 +309,7 @@
   <td>29/12/2018</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="February">
   <td>02/02/2019</td>
   <td>15:00</td>
   <td>Away</td>
@@ -320,7 +345,7 @@
   <td>26/01/2019</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="March">
   <td>02/03/2019</td>
   <td>15:00</td>
   <td>Away</td>
@@ -356,8 +381,8 @@
   <td>02/03/2019</td>
   <td>N/a</td>
  </tr>
- <tr>
-  <td>04/06/2019</td>
+ <tr id="April">
+  <td>06/04/2019</td>
   <td>15:00</td>
   <td>Away</td>
   <td>Everton</td>
@@ -392,7 +417,7 @@
   <td>27/03/2019</td>
   <td>N/a</td>
  </tr>
- <tr>
+ <tr id="May">
   <td>04/05/2019</td>
   <td>15:00</td>
   <td>Home</td>
