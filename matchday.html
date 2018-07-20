@@ -45,7 +45,27 @@
     <div id="bumper"></div>
     <div id="bumper"></div>
     <div id="bumper"></div>
+<!-- Modal -->
 
+    <div class="modal fade" id="TicketPricing" tabindex="-1" role="dialog" aria-labelledby="Ticket" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="ModalTitle">Ticket Pricing</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="ModalDetails">
+          Prices Range from £27 - £97
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Copy</button>
+      </div>
+    </div>
+    </div>
+    </div>
     <div class="months">
       <h2>Go to Month:</h2>
       <ul>
@@ -60,12 +80,264 @@
         <li><a href="#April">April</a></li>
         <li><a href="#May">May</a></li>
       </ul>
-      <button type="button" name="displayTeams" class="displayteams"><a href="#">
-        <h2 ><i class="fal fa-hand-pointer"></i>Search by Teams</h2>
-      </a></button>
-
     </div>
-    <div class="teams">
+    <div class="Buttons">
+      <button type="button" name="displayTeams" class="displayteams" id="displayTeams" onclick="displayTeams()">
+        <h2><i class="fal fa-hand-pointer"></i>Search by Teams</h2>
+      </button>
+      <button type="button" name="hideTeams" class="hideteams" id="hideTeams" onclick="hideTeams()">
+        <h2><i class="fal fa-minus-square"></i>Hide Teams</h2>
+      </button>
+      <a class="typeform-share button" href="https://arsenalfermanaghsc.typeform.com/to/b68NLi" data-mode="popup" style="display:inline-block;text-decoration:none;background-color:#D80919;color:white;cursor:pointer;font-family:'Raleway',Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:12px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;" data-submit-close-delay="5" target="_blank">Popular Fixtures Survey </a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+    </div>
+    <div class="teams" id="teams">
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/BournemouthBadge.png" alt="Bournemouth">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/BrightonBadge.png" alt="Brighton">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/BurnleyBadge.png" alt="Burnley">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/CardiffBadge.png" alt="Cardiff">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/ChelseaBadge.png" alt="Chelsea">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/CrystalPalaceBadge.png" alt="Crystal">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/EvertonBadge.png" alt="Everton">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/FulhamBadge.png" alt="Fulham">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/HuddersfieldBadge.png" alt="Huddersfield">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/LeicesterBadge.png" alt="Leicester">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/LiverpoolBadge.png" alt="Liverpool">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/ManCityBadge.png" alt="Manchester City ">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/ManUnitedBadge.png" alt="Manchester United">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/NewcastleBadge.png" alt="Newcastle">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/SouthamptonBadge.png" alt="Southampton">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/SpursBadge.png" alt="Spurs">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/WatfordBadge.png" alt="Watford">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/WestHamBadge.png" alt="West Ham">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
+      <div class="team">
+        <div class="teamBadge">
+          <img src="./Resources/Images/teamBadges/WolvesBadge.png" alt="Wolves">
+        </div>
+        <div class="teamButtons">
+          <div class="home">
+            <a href="#">H</a>
+          </div>
+          <div class="away">
+            <a href="#">A</a>
+          </div>
+        </div>
+      </div>
 
     </div>
 
@@ -93,7 +365,7 @@
   <th>Ticket Deadline</th>
   <th>Result</th>
  </tr>
- <tr id="August">
+ <tr id="August" data-toggle="modal"  data-target="#TicketPricing">
   <td>12/08/2018</td>
   <td>16:00</td>
   <td>Home</td>
