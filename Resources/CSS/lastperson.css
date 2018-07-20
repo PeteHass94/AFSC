@@ -20,26 +20,39 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
 #navigation {
   background-color: #000000;
 }
-.main {
+#title {
+  font-family: 'Raleway', Helvetica, sans-serif;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5em;
+  margin-bottom: 0em;
+  color: #ffffff;
+}
+h2 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+.main {
+  margin: auto;
+  width: 90%;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
 }
 .left, .right {
-  width: 47%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 60em;
+  height: 40em;
   padding: auto;
   color: #9B814E;
 }
 .left a, .right a {
-  height: 90%;
+  height: 95%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -52,43 +65,58 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   background-color: #063672;
 }
 .right a:hover {
-  background-color: rgb(236,12,28);
+  background-color: #D80919;
 }
 .right a:hover i {
   transition: transform 30s ease;
   transform: rotate(3600deg);
+
 }
 .click {
-  height: 40em;
+  height: 20em;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
 }
 .left .click img {
   padding: 1em;
 }
 .left .click img {
-  height: 25em;
+  height: 15em;
 }
 .click h2 {
-  margin-top: 2em;
+  margin-bottom: 0;
   color: #ffffff;
+  margin-bottom: 0;
+  text-align: center;
 }
-.right .click {
+.right .click .frame {
+  height: 100%;
+  width: 90%;
   border: 1em solid #ffffff;
-  border-bottom: 1em solid transparent;
-  padding: 2em;
-  width: 80%;
+  border-bottom: 00em solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5em;
+}
+
+.right h2{
+  text-align: center;
+  margin-bottom: 0;
 }
 .right i {
-  height: 40%;
-  font-size: 12em;
+
+  font-size: 8em;
   text-align: center;
   display: flex;
-  align-items: center;
-  color: #9B814E;
+  align-content: center;
+  color: #ffffff;
+  background-color: rgba(155, 129, 78,0.7);
+  border-radius: 100%;
 }
 .rules {
   width: 100%;
@@ -116,6 +144,7 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   background-color: #9B814E;
   padding: 3em;
   border-radius: 5em;
+  margin-bottom: 1em;
 }
 #lastPerson {
   color: #063672;
