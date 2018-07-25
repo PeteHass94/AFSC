@@ -8,15 +8,24 @@ function hideTeams() {
     document.getElementById("displayTeams").style.display = "flex";
     document.getElementById("hideTeams").style.display = "none";
 }
-$(function(){
-    $('#TicketPricing').modal({
+
+var detailsText = null;
+
+$(function () {
+    $('#orderModal').modal({
         keyboard: true,
         backdrop: "static",
-        show:false,
+        show: false,
+    }).on('show', function () {
+    });
+    $(".FixList").find('tr[data-id]').on('click', function () {
+        debugger;
 
-    }).on('show', function(){
-          var getIdFromRow = $(event.target).closest('tr').data('id');
-        //make your ajax call populate items or what even you need
-        $(this).find('#ModalDetails').html($('<b> Order Id selected: ' + getIdFromRow  + '</b>'))
+        //do all your operation populate the modal and open the modal now. DOnt need to use show event of modal again
+        detailsText =('I would like to go see ' + $(this).data('id') + ' on '+ $(this).children('td:nth-child(1)').html())
+        $('#orderDetails').html(detailsText);
+        $('#orderModal').modal('show');
     });
 });
+
+new ClipboardJS('.copyButton');

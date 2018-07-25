@@ -16,6 +16,3 @@ $(document).on("scroll", function(){
     $(element).removeClass("shrink");
   }
 });
-$(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-});

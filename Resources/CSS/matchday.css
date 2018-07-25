@@ -17,6 +17,7 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   background: linear-gradient(to right, rgb(236,12,28), #063672);
   width: 100%;
   padding-bottom: 7em;
+  position: static;
 }
 #navigation.shrink {
   opacity: 0.6;
@@ -115,7 +116,6 @@ tr td{
 tr:nth-child(even) {
   background: rgb(216,9,25);
 }
-
 tr td:nth-child(3) {
   font-weight: bold;
 }
@@ -127,7 +127,22 @@ tr:hover {
   background: #9B814E;
   color: #ffffff;
 }
-
+@media only screen and (max-width: 1000px) {
+tr th:nth-child(5),
+tr td:nth-child(5) {
+  display: none;
+}
+}
+@media only screen and (max-width: 800px) {
+tr th:nth-child(7),
+tr td:nth-child(7) {
+  display: none;
+}
+tr th:nth-child(2),
+tr td:nth-child(2) {
+  display: none;
+}
+}
 /* Buttons */
 .Buttons {
   width: 100%;
@@ -246,4 +261,16 @@ button {
 .teamButtons div a:hover{
   background-color: #9B814E;
   color: #ffffff;
+}
+/*Modal */
+
+#orderModal {
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+#orderModal h5{
+  COLOR: #D80919;
+}
+
+footer {
+  margin-top: -12em;
 }
