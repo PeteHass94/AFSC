@@ -33,8 +33,7 @@
         <li><a href="home.html"><i class="fal fa-home-heart"></i><span>Home</span></a></li>
         <li id="matchdayMenu"><a href=""><i class="far fa-futbol"></i><span>Matchday</span></li></a>
         <li><a href=""><i class="fal fa-calendar-check"></i><span>Events</span></li></a>
-        <!--<li><a href=""><i class="fal fa-users"></i><span>Members</span></li></a> -->
-        <li><a href="./lastPerson.html"><i class="far fa-trophy-alt"></i><span>Competition</span></li></a>
+        <li><a href=""><i class="fal fa-users"></i><span>Members</span></li></a>
       </ul>
     </nav>
     <nav class="other">
@@ -66,12 +65,12 @@
           <div id="orderDetails" class="modal-body orderDetails">
 
           </div>
-          <div id="ticketPrices" class="modal-body">
-
+          <div id="orderTickets" class="modal-body">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdfZ4wINesCYML3aVVMi6ZrJuNPeQMEiwh6qQV1uu4HdEH5aQ/viewform?embedded=true" width="740" height="815" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary copyButton" data-clipboard-action="copy" data-clipboard-target="#orderDetails">Copy</button>
+            <button id="copyButton" type="button" class="btn btn-primary copyButton" data-clipboard-action="copy" data-clipboard-target="#orderDetails" onclick="order()">Copy</button>
           </div>
         </div>
       </div>
@@ -101,7 +100,8 @@
       </button>
       <a class="typeform-share button" href="https://arsenalfermanaghsc.typeform.com/to/b68NLi" data-mode="popup"
       style="display:inline-block;text-decoration:none;background-color:#D80919;color:white;cursor:pointer;font-family:'Raleway',Helvetica,Arial,sans-serif;font-size:20px;line-height:50px;text-align:center;margin:0;height:50px;padding:0px 33px;border-radius:12px;max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-weight:bold;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;"
-      data-submit-close-delay="5" target="_blank">Popular Fixtures Survey</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
+      data-submit-close-delay="5" target="_blank">Popular Fixtures Survey</a> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })()
+      </script>
     </div>
     <div class="teams" id="teams">
       <div class="team">
@@ -740,6 +740,20 @@
 <!--END OF OUTPUT FROM EXCEL PUBLISH AS WEB PAGE WIZARD-->
 <!----------------------------->
 </div>
+<!-- ticket  prices -->
+<div id="ticketInfoDiv">
+<h1>Ticket Prices</h1>
+<h5>Ticket Prices depend on Prices of the catagory of each match</h5>
+
+<h6>Arsenal.com Members set the prices here:</h6> <a href="https://www.arsenal.com/tickets/member-ticket-prices" target="_blank"> https://www.arsenal.com/tickets/member-ticket-prices</a>
+<h6>Arsenal.com Non-Members set the prices here:</h6> <a href="https://www.arsenal.com/tickets/non-member-ticket-prices" target="_blank"> https://www.arsenal.com/tickets/non-member-ticket-prices</a>
+
+</div>
+
+
+
+
+
 <footer>
   <div class="Emirates">
     <a href="https://goo.gl/maps/Z7bc71tvP8n"> <img src="./Resources/Images/North London Map.jpg" alt=""> </a>

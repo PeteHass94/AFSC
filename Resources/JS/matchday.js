@@ -11,6 +11,7 @@ function hideTeams() {
 
 var detailsText = null;
 
+
 $(function () {
     $('#orderModal').modal({
         keyboard: true,
@@ -20,7 +21,8 @@ $(function () {
     });
     $(".FixList").find('tr[data-id]').on('click', function () {
         debugger;
-
+        var element1 = document.getElementById("orderTickets");
+        $(element1).removeClass("ticketForm");
         //do all your operation populate the modal and open the modal now. DOnt need to use show event of modal again
         detailsText =('I would like to go see ' + $(this).data('id') + ' on '+ $(this).children('td:nth-child(1)').html())
         $('#orderDetails').html(detailsText);
@@ -29,3 +31,8 @@ $(function () {
 });
 
 new ClipboardJS('.copyButton');
+
+function order() {
+  var element1 = document.getElementById("orderTickets");
+  $(element1).addClass("ticketForm");
+}

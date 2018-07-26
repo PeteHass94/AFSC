@@ -13,6 +13,10 @@ font-family: 'Raleway Dots', cursive;
 font-family: 'PT Serif', Georgia, serif;
 font-family: 'IBM Plex Sans', Helvetica, sans-serif;
 */
+body {
+  color: #ffffff;
+}
+
 .belowTitle {
   background: linear-gradient(to right, rgb(236,12,28), #063672);
   width: 100%;
@@ -266,6 +270,7 @@ button {
 
 #orderModal {
   font-family: 'Raleway', Helvetica, sans-serif;
+  color: #000000;
 }
 #orderModal h5{
   color: #D80919;
@@ -274,4 +279,26 @@ button {
 
 footer {
   margin-top: -12em;
+}
+
+#orderTickets {
+  display: none;
+}
+#orderTickets.ticketForm {
+  display: flex;
+  width: 100%;
+}
+
+#ticketInfoDiv {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-content: center;
+  background: #D80919;
+  text-align: center;
+}
+#ticketInfoDiv a {
+  color: #000000;
 }
