@@ -159,6 +159,8 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   width: 40%;
   margin-left: 5%;
   text-align: justify;
+  flex-wrap: wrap;
+
 }
 .itinerary ul{
   list-style-type: circle;

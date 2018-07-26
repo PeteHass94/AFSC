@@ -271,3 +271,7 @@ footer {
   transition: transform 30s ease;
   transform: rotate(3600deg);
 }
+.other a {
+  display: none;
+    cursor: default;
+}
