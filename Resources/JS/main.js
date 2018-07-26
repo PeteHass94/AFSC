@@ -16,3 +16,22 @@ $(document).on("scroll", function(){
     $(element).removeClass("shrink");
   }
 });
+
+$(function () {
+    $('#joinModal').modal({
+        keyboard: true,
+        backdrop: "fixed",
+        show: false,
+    }).on('show', function () {
+    });
+    $(".joinClub").on('click', function () {
+        debugger;
+        $('#joinModal').modal('show');
+    });
+});
+
+$(document).ready(function(){
+	var iFrameDOM = $("iframe#comments").contents();
+
+	iFrameDOM.find("div.freebirdFormviewerViewFormBanner.freebirdHeaderMast").css("height", "6em");
+});

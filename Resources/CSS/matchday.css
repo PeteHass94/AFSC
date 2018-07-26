@@ -268,7 +268,8 @@ button {
   font-family: 'Raleway', Helvetica, sans-serif;
 }
 #orderModal h5{
-  COLOR: #D80919;
+  color: #D80919;
+  font-weight: 800;
 }
 
 footer {
