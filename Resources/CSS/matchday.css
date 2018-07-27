@@ -29,6 +29,19 @@ body {
 .other.shrink {
   opacity: 0;
 }
+
+
+.titles {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+.titles h1 {
+  font-weight: 800;
+}
+
+
 #FixtureList {
   display: flex;
   justify-content: center;
