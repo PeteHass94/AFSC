@@ -34,6 +34,7 @@ body {
 .titles {
   width: 100%;
   margin: auto;
+  margin-top: 0.5em;
   text-align: center;
   font-family: 'Raleway', Helvetica, sans-serif;
 }
@@ -74,6 +75,7 @@ th {
 .months {
   width: 100%;
   padding: 2em;
+  padding-top: 0.5em;
   padding-bottom: 1em;
   display: flex;
   align-items: center;
