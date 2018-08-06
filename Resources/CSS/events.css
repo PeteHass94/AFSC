@@ -18,12 +18,29 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   width: 100%;
   margin: auto;
 }
-
+main {
+  display: flex;
+  flex-direction: column;
+}
+.headings {
+  width: 100%;
+  margin: auto 2em;
+  margin-top: 1em;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  text-align: center;
+}
+.headings h1 {
+  font-family: 'Raleway', Helvetica, sans-serif;
+  margin: auto;
+  color: #EC0C1C;
+  font-weight: 800;
+  font-size: 4.5em;
+}
 /*Events */
 .events {
-  width: 85%;
+  width: 95%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   padding-top: 2em;
   margin: 0 auto 2em auto;
@@ -33,7 +50,9 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   margin-right: 1em;
 }
 .events .main {
-  width: 60%;
+  width: 90%;
+  margin: auto;
+  margin-bottom: 3em;
 }
 .events .mainImage {
   width: 100%;
@@ -67,11 +86,14 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
 }
 /*Main body */
 @media only screen and (max-width: 1400px) {
+  .events {
+    width: 100%;
+  }
   .events .main {
-    width: 70%;
+    width: 90%;
   }
   .events .main .description .headline {
-    width: 95%;
+    width: 100%;
   }
   .events .main .description .headline a{
     margin-left: 2em;
@@ -167,10 +189,30 @@ font-family: 'IBM Plex Sans', Helvetica, sans-serif;
   color: #063672;
 }
 .brief {
-  width: 45%;
+  width: 75%;
   padding-top: 1em;
   margin-right: 5%;
   text-align: justify;
+}
+.brief h3 {
+  color: #D80919;
+}
+.brief a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: inherit;
+  width: auto;
+  color: #9B814E;
+}
+.brief .compDetails p{
+  text-align: left;
+  margin-bottom: 0.5em;
+}
+
+.brief .compDetails i{
+  color: #D80919;
+  margin-right: 0.5em;
 }
 .QOTM {
   color: #EC0C1C;
