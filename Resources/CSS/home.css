@@ -305,7 +305,16 @@ input[type="reset"]:hover
 #joinModal h5{
   color: #D80919;
 }
+#commentModal .modal-dialog{
+  
+}
+@media only screen and (min-width: 576px) {
 
+.modal-dialog {
+    max-width: 900px;
+    margin: 1.75rem auto;
+}
+}
 
 /* iframe */
 iframe {
